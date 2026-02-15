@@ -1,0 +1,132 @@
+.events-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.page-header p {
+  margin: 0.5rem 0 0 0;
+  color: var(--text-secondary-light);
+}
+
+.events-controls {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--bg-primary-light);
+  border: 1px solid var(--border-light);
+  border-radius: 0.5rem;
+  flex: 1;
+  min-width: 250px;
+}
+
+.search-bar input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text-primary-light);
+  font-size: 0.95rem;
+}
+
+.search-bar input::placeholder {
+  color: var(--text-tertiary-light);
+}
+
+.search-bar svg {
+  color: var(--text-tertiary-light);
+}
+
+.category-filter {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.category-btn {
+  padding: 0.5rem 1rem;
+  background-color: var(--bg-primary-light);
+  border: 1px solid var(--border-light);
+  border-radius: 0.5rem;
+  color: var(--text-primary-light);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.category-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.category-btn.active {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.events-masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  auto-rows: max-content;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: var(--bg-primary-light);
+  border-radius: 0.75rem;
+}
+
+.empty-state p {
+  font-size: 1.1rem;
+  color: var(--text-secondary-light);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .events-controls {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .search-bar {
+    min-width: auto;
+  }
+
+  .category-filter {
+    gap: 0.5rem;
+  }
+
+  .events-masonry {
+    grid-template-columns: 1fr;
+  }
+}
