@@ -5,7 +5,7 @@ A comprehensive, modern, and responsive web application for managing academic de
 ## 🎯 Features
 
 ### For Students
-- **Personalized Dashboard**: View deadlines relevant to your group/subgroup
+- **PerSSsonalized Dashboard**: View deadlines relevant to your group/subgroup
 - **Deadline Tracking**: Real-time countdown timers with color-coded urgency levels
 - **Campus Events**: Discover and engage with student-posted events
 - **Smart Filtering**: Filter deadlines by type (assignments, notes, quizzes)
